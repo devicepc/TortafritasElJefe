@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torta fritas el JEFE</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        .tfritas{
+            text-align: center;
+        }
+        .tfritas ul {
+            list-style:  none;
+        }
+        .Sucursales {
+            border: 1px solid rgb(10, 10, 10) ;
+            margin: auto;
+        }
+        .logo{
+            margin-left: 40%;
+        }
+        .logopeq{
+            height: 100px;
+            width: 200px;
+            margin-left: 5%;
+            cursor: pointer;
+            float: left;
+        }
+        .menu{
+            border-bottom: 30px;
+        }
+        .menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: rgb(252, 249, 163);
+float: left;
+width: 80%;
+   
+}
+.menu li {
+    border-right: 1px, solid #FFF;
+    margin-left: 10%;
+}
+.menu li:hover{
+    background: rgba(251, 216,113, 0.3);
+}
+.menu li a {
+    display: block;
+    padding: 20px 20px;
+    color: rgb(149, 71, 29);
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+#btn-menu{
+    display: none;
+}
+.labelnav{
+    display: none;
+}
+
+.h3tortas{
+    display: inline-block;
+    margin-left: 20%;
+}
+.h3Menu{
+    font-size: 1.9rem;
+}
+.extras{
+    font-size: 1.4rem;
+}
+.tfritas ul li{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+th, td{
+    border: black 1px solid;
+    
+}
+.h2{
+    text-decoration: underline;
+    font-size: 1.3rem;
+
+}
+.btnenviar{
+    background-color:  rgb(252, 249, 163); 
+    color: rgb(149, 71, 29);
+    border-radius: 15%;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(149, 71, 29);
+    text-align: center;
+}
+footer p{
+    font-size: 1.2rem;
+    color: #FFF;
+    padding-top: 20px ;
+}
+footer p a{
+    font-size: 1.2rem;
+    color: #FFF;
+    padding-top: 20px ;
+    text-decoration: none;
+}
+.Sucursales tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media (max-width:1351px) and (min-width:769px){
+.menu ul{
+    width: 70%;
+
+}
+
+
+}
+@media (max-width:818px){
+    header label {
+        display: block;
+
+    }
+    #btn-menu{
+    display: block;
+}
+.labelnav{
+    display: block;
+    margin-top: -20px;
+}
+    .menu {
+        position: absolute;
+        
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+#btn-menu:checked ~ .menu{
+    margin: 0;
+}
+.h3tortas{
+    margin-top: -100px;
+    font-size: 2.5rem;
+    color: rgb(149, 71, 29);
+}
+.logo{
+    width: 100%;
+    margin-left: 0;
+    height: 400px;
+}
+
+}
+        
+     
+    </style>
+</head>
+<body>
+<header>
+    
+    
+    <div id="nav">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="labelnav" ><img src="./img/menu.png" alt="icon">  </label>
+    <nav class="menu">
+        <a href="index.html"><img src="./img/logopeq.png" alt="" class="logopeq"></a>
+        <ul>
+            <li><a href="#tfritasMenu">Menú</a></li>
+            <li><a href="#tfritasUbic">Sucursales</a></li>
+            <li><a href="#tfritasPedido">Pedido</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<h1 class="tfritas h3tortas">Torta fritas, desde 2022</h1>
+<img src="./img/Diseño tortafritas.png" alt="" class="logo">
+
+<section id="tfritasMenu" class="tfritas">
+<h3 class="h3Menu">Tortafritas Grandes  ............ $ 40 </h3>
+<p class="extras">Las saladas se les puede poner opcional salsa de cilantro y cebolla</p>
+<ul>
+    <li>Con dulce de leche</li>
+    <li> Con membrillo</li>
+    <li>Con Canela</li>
+    <li>Con Salsa picante</li>
+    <li>Con Jamon</li>
+    <li>Con Queso chedar  y Panceta </li>
+    <li>Con Queso y Azucar</li>
+</ul>
+
+<h3 class="h3Menu">Tortafritas pequeñas  ............ $ 30 </h3>
+<ul>
+    <li> Con Dulce de membrillo</li>
+    <li>Con Queso crema</li>
+    <li>Con Azucar</li>
+    <li>Con salame</li>
+</ul>
+
+<h3 class="h3Menu">Especiales  ............ $ 50 </h3>
+<ul>
+    <li>Con dulce de leche de cabra</li>
+    <li> Con Dulce de Batata</li>
+    <li>Con Curcuma con pimienta</li>
+    <li>Con Jamon y Queso</li>
+    <li>Con Banana split con Nutella</li>
+</ul>
+</section>
+<hr>
+<section id="tfritasUbic" class="tfritas">
+    
+<h2>Ubicacion</h2>
+<h3 class="h3Menu">Sucursales</h3>
+<table class="Sucursales">
+    <tr>
+        <th>  Nombre  </th>
+        <th>Ubicacion</th>
+        <th>Horarios</th>
+        <th>Telefono</th>
+    </tr>
+    <tr>
+        <td>Centro</td>
+        <td><a href="https://www.google.com/maps/place/Portones+Shopping/@-34.8810769,-56.083631,17z/data=!4m5!3m4!1s0x959f86e5586fd3e1:0xbaa8aff375c84e7c!8m2!3d-34.8810769!4d-56.0814423">scsadd 1234</a></td>
+        <td>L a D 24 HRS </td>
+        <td> <a href="tel: +24324214354" > 24324214354 </a></td>
+    </tr>
+    <tr>
+        <td>Union</td>
+        <td> <a href="https://www.google.com/maps/place/Nuevocentro+Shopping/@-34.8689412,-56.1719842,17z/data=!3m1!4b1!4m5!3m4!1s0x959f807aabfe63b1:0xb6f6776baeb3a995!8m2!3d-34.8689412!4d-56.1697955" >bbcd 2345</a></td>
+        <td>L a S 5 mp a 3 am</td>
+        <td> <a href="tel: +24324214354" > 24324214354 </a></td>
+    </tr>
+    
+    <tr>
+        <td>Carrasco</td>
+        <td><a href="5254+JJ Ciudad de la Costa, Departamento de Canelones"  >jghsadfgg 1234</a></td>
+        <td>M a D 5 mp a 3 am</td>
+        <td> <a href="tel: +24324214354" > 24324214354 </a></td>
+    </tr>
+</table>
+</section>
+<hr>
+
+<section id="tfritasPedido" class="tfritas">
+<h3 class="h3Menu">Pedidos</h3>
+<h2>Haz tu pedido Aqui</h2>
+<form action="" method="get">
+<p class="h2">De que sucursal prefieres?</p>
+<select name="" id="">
+    <option value="Centro">Centro</option>
+    <option value="Union">Union</option>
+    <option value="Carrasco">Carrasco</option>
+</select>
+
+
+<p class="h2">De que gusto prefires ?</p>
+<input type="checkbox" id="DdeLeche" name="DdeLeche" value="DdeLeche">
+<label for="DdeLeche">Dulce de Leche</label>
+<input type="number" id="DdeLecheNumber" name="DdeLecheNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="Membrillo" name="Membrillo" value="Membrillo">
+<label for="Membrillo">Membrillo</label>
+<input type="number" id="MembrilloNumber" name="MembrilloNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="Canela" name="Canela" value="Canela">
+<label for="Canela">Canela</label>
+<input type="number" id="CanelaNumber" name="CanelaNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="SalsaPicante" name="SalsaPicante" value="SalsaPicante">
+<label for="SalsaPicante">Salsa Picante</label>
+<input type="number" id="SalsaPicanteNumber" name="SalsaPicanteNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="Jamon" name="Jamon" value="Jamon">
+<label for="Jamon">Jamon</label>
+<input type="number" id="JamonNumber" name="JamonNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="ChedarPanceta" name="ChedarPanceta" value="Chedar y Panceta">
+<label for="ChedarPanceta">Chedar y Panceta</label>
+<input type="number" id="ChedarPancetaNumber" name="ChedarPancetaNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="QuesoAzucar" name="QuesoAzucar" value="QuesoAzucar">
+
+<label for="QuesoAzucar">Queso y Azucar</label>
+<input type="number" id="QuesoAzucarNumber" name="Queso y AzucarNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="DdeMembrillo" name="DdeMembrillo" value="DdeMembrillo">
+<label for="DdeMembrillo">Dulce de Membrillo</label>
+<input type="number" id="DdeMembrilloNumber" name="DdeMembrilloNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="QuesoCrema" name="QuesoCrema" value="QuesoCrema">
+<label for="QuesoCrema">Queso Crema</label>
+<input type="number" id="QuesoCremaNumber" name="QuesoCremaNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="Azucar" name="Azucar" value="Azucar">
+
+<label for="Azucar">Azucar</label>
+<input type="number" id="AzucarNumber" name="AzucarNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="Salame" name="Salame" value="Salame">
+<label for="Salame"> Salame</label>
+<input type="number" id="SalameNumber" name="SalameNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="DdeLechedeCabra" name="DdeLechedeCabra" value="DdeLechedeCabra">
+<label for="DdeLechedeCabra">Dulce de Leche de Cabra</label>
+<input type="number" id="DdeLechedeCabraNumber" name="DdeLechedeCabraNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="CurcumaPimienta" name="CurcumaPimienta" value="CurcumaPimienta">
+<label for="CurcumaPimienta"> Curcuma y Pimienta</label>
+<input type="number" id="CurcumaPimientaNumber" name="CurcumaPimientaNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="JamonQueso" name="JamonQueso" value="JamonQueso">
+<label for="JamonQueso">Jamon y Queso</label>
+<input type="number" id="JamonQuesoNumber" name="JamonQuesoNumber" placeholder="¿ Cuantos quieres?" >
+<br><br>
+<input type="checkbox" id="BananaSplitNutella" name="BananaSplitNutella" value="BananaSplitNutella">
+<label for="BananaSplitNutella">Banana Split con Nutella</label>
+<input type="number" id="BananaSplitNutellaNumber" name="BananaSplitNutellaNumber" placeholder="¿ Cuantos quieres?" >
+<br>
+<br><br>
+<h2 class="h2">Datos de quien recibe</h2>
+<label for="Nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="Como te llamas?">
+<br><br>
+<label for="Telefono">Telefono</label>
+<input type="text" id="nombre" name="nombre" placeholder="+598...">
+<br><br>
+<label for="Direccion">Direccion</label>
+<input type="text" id="nombre" name="nombre" placeholder=" jghsadfgg 1234">
+<br><br>
+<button type="submit" class="btnenviar">Enviar pedido</button>
+<br><br>
+</form>
+</section>
+<footer class="footer">
+<p>Derechos reservados <a href="">Tortafritas el JEFE</a></p>
+
+</footer>
+
+</body>
+</html>
